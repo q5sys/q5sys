@@ -16,12 +16,7 @@
 - Producer and Host of *Open Source Voices*
 - Core Developer of Project Trident
 - Core Team Member and Dev of TrueOS/PC-BSD
-- Puppy Linux Dev
- - Attackpup
- - Cloudpup
- - RPRP
- - Helped with Lighthouse64
- - Helped with FatDog64
+- Puppy Linux Dev: Attackpup, Cloudpup, RPRP, Helped with Lighthouse64, Helped with FatDog64
 - YacyPi
 
 
