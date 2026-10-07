@@ -27,6 +27,7 @@ STEP = CELL + GAP                           # distance from one square to the ne
 LEFT = 32                                   # room for the Mon/Wed/Fri labels
 GRID_TOP = 40                               # where the squares start inside a year block
 BLOCK_HEIGHT = GRID_TOP + 7 * STEP + 24     # height of one year, including space below it
+HEADER_HEIGHT = 56                          # all-time total at the very top
 WIDTH = LEFT + 54 * STEP                    # a calendar year can touch 54 week columns
 
 MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
@@ -50,8 +51,8 @@ COLORS = {
 }
 
 TEXT_COLORS = {
-    "dark": {"main": "#e6edf3", "muted": "#9198a1"},
-    "light": {"main": "#1f2328", "muted": "#59636e"},
+    "dark": {"main": "#e6edf3", "muted": "#9198a1", "rule": "#30363d"},
+    "light": {"main": "#1f2328", "muted": "#59636e", "rule": "#d1d9e0"},
 }
 
 YEARS_QUERY = """
@@ -145,6 +146,19 @@ def level_to_color(level, theme):
     return COLORS[theme][level]
 
 
+def render_header(grand_total, first_year):
+    """Return the SVG fragment for the top line, e.g. "12,345 contributions since 2010"."""
+    lines = []
+    lines.append(
+        f'<text x="0" y="26">'
+        f'<tspan class="total">{grand_total:,}</tspan>'
+        f'<tspan class="count" dx="8">contributions since {first_year}</tspan>'
+        f'</text>'
+    )
+    lines.append(f'<line x1="0" y1="40" x2="{WIDTH}" y2="40" class="rule"/>')
+    return "\n".join(lines)
+
+
 def render_year(calendar, year, y_offset, theme):
     """Return the SVG fragment for one year: header, labels, and squares."""
     lines = []
@@ -193,6 +207,7 @@ def render_document(fragments, total_height, theme):
     """Wrap all year fragments in the <svg> root element."""
     main_color = TEXT_COLORS[theme]["main"]
     muted_color = TEXT_COLORS[theme]["muted"]
+    rule_color = TEXT_COLORS[theme]["rule"]
 
     lines = []
     lines.append(
@@ -202,6 +217,8 @@ def render_document(fragments, total_height, theme):
     )
     lines.append("<style>")
     lines.append('text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }')
+    lines.append(f".total {{ font-size: 24px; font-weight: 600; fill: {main_color}; }}")
+    lines.append(f".rule {{ stroke: {rule_color}; stroke-width: 1; }}")
     lines.append(f".year {{ font-size: 15px; font-weight: 600; fill: {main_color}; }}")
     lines.append(f".count {{ font-size: 12px; fill: {muted_color}; }}")
     lines.append(f".label {{ font-size: 10px; fill: {muted_color}; }}")
@@ -227,13 +244,21 @@ def main():
         print(f"Fetching {year}")
         calendars.append(get_year_calendar(token, LOGIN, year))
 
-    total_height = len(years) * BLOCK_HEIGHT
+    # All-time total across every year
+    grand_total = 0
+    for calendar in calendars:
+        grand_total += calendar["totalContributions"]
+    first_year = years[-1]
+    print(f"Total: {grand_total:,} contributions since {first_year}")
+
+    total_height = HEADER_HEIGHT + len(years) * BLOCK_HEIGHT
 
     # Draw it once per theme
     for theme in ["dark", "light"]:
         fragments = []
+        fragments.append(render_header(grand_total, first_year))
         for index, year in enumerate(years):
-            y_offset = index * BLOCK_HEIGHT
+            y_offset = HEADER_HEIGHT + index * BLOCK_HEIGHT
             fragments.append(render_year(calendars[index], year, y_offset, theme))
 
         svg = render_document(fragments, total_height, theme)

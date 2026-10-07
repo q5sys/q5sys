@@ -1,12 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="734" height="2635" viewBox="0 0 734 2635">
+<svg xmlns="http://www.w3.org/2000/svg" width="734" height="2691" viewBox="0 0 734 2691">
 <style>
 text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+.total { font-size: 24px; font-weight: 600; fill: #e6edf3; }
+.rule { stroke: #30363d; stroke-width: 1; }
 .year { font-size: 15px; font-weight: 600; fill: #e6edf3; }
 .count { font-size: 12px; fill: #9198a1; }
 .label { font-size: 10px; fill: #9198a1; }
 </style>
-<g transform="translate(0,0)">
-<text x="0" y="16"><tspan class="year">2026</tspan><tspan class="count" dx="10">2,368 contributions</tspan></text>
+<text x="0" y="26"><tspan class="total">42,126</tspan><tspan class="count" dx="8">contributions since 2010</tspan></text>
+<line x1="0" y1="40" x2="734" y2="40" class="rule"/>
+<g transform="translate(0,56)">
+<text x="0" y="16"><tspan class="year">2026</tspan><tspan class="count" dx="10">2,371 contributions</tspan></text>
 <text x="0" y="62" class="label">Mon</text>
 <text x="0" y="88" class="label">Wed</text>
 <text x="0" y="114" class="label">Fri</text>
@@ -298,10 +302,10 @@ text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Ar
 <text x="552" y="34" class="label">Oct</text>
 <rect x="552" y="40" width="10" height="10" rx="2" fill="#161b22"/>
 <rect x="552" y="53" width="10" height="10" rx="2" fill="#161b22"/>
-<rect x="552" y="66" width="10" height="10" rx="2" fill="#161b22"/>
+<rect x="552" y="66" width="10" height="10" rx="2" fill="#0e4429"/>
 <rect x="552" y="79" width="10" height="10" rx="2" fill="#161b22"/>
 </g>
-<g transform="translate(0,155)">
+<g transform="translate(0,211)">
 <text x="0" y="16"><tspan class="year">2025</tspan><tspan class="count" dx="10">2,524 contributions</tspan></text>
 <text x="0" y="62" class="label">Mon</text>
 <text x="0" y="88" class="label">Wed</text>
@@ -684,7 +688,7 @@ text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Ar
 <rect x="708" y="66" width="10" height="10" rx="2" fill="#006d32"/>
 <rect x="708" y="79" width="10" height="10" rx="2" fill="#26a641"/>
 </g>
-<g transform="translate(0,310)">
+<g transform="translate(0,366)">
 <text x="0" y="16"><tspan class="year">2024</tspan><tspan class="count" dx="10">2,549 contributions</tspan></text>
 <text x="0" y="62" class="label">Mon</text>
 <text x="0" y="88" class="label">Wed</text>
@@ -1068,7 +1072,7 @@ text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Ar
 <rect x="708" y="53" width="10" height="10" rx="2" fill="#0e4429"/>
 <rect x="708" y="66" width="10" height="10" rx="2" fill="#161b22"/>
 </g>
-<g transform="translate(0,465)">
+<g transform="translate(0,521)">
 <text x="0" y="16"><tspan class="year">2023</tspan><tspan class="count" dx="10">4,910 contributions</tspan></text>
 <text x="0" y="62" class="label">Mon</text>
 <text x="0" y="88" class="label">Wed</text>
@@ -1451,7 +1455,7 @@ text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Ar
 <rect x="695" y="118" width="10" height="10" rx="2" fill="#0e4429"/>
 <rect x="708" y="40" width="10" height="10" rx="2" fill="#0e4429"/>
 </g>
-<g transform="translate(0,620)">
+<g transform="translate(0,676)">
 <text x="0" y="16"><tspan class="year">2022</tspan><tspan class="count" dx="10">1,505 contributions</tspan></text>
 <text x="0" y="62" class="label">Mon</text>
 <text x="0" y="88" class="label">Wed</text>
@@ -1834,7 +1838,7 @@ text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Ar
 <rect x="708" y="105" width="10" height="10" rx="2" fill="#39d353"/>
 <rect x="708" y="118" width="10" height="10" rx="2" fill="#39d353"/>
 </g>
-<g transform="translate(0,775)">
+<g transform="translate(0,831)">
 <text x="0" y="16"><tspan class="year">2021</tspan><tspan class="count" dx="10">3,018 contributions</tspan></text>
 <text x="0" y="62" class="label">Mon</text>
 <text x="0" y="88" class="label">Wed</text>
@@ -2217,7 +2221,7 @@ text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Ar
 <rect x="708" y="92" width="10" height="10" rx="2" fill="#0e4429"/>
 <rect x="708" y="105" width="10" height="10" rx="2" fill="#0e4429"/>
 </g>
-<g transform="translate(0,930)">
+<g transform="translate(0,986)">
 <text x="0" y="16"><tspan class="year">2020</tspan><tspan class="count" dx="10">1,752 contributions</tspan></text>
 <text x="0" y="62" class="label">Mon</text>
 <text x="0" y="88" class="label">Wed</text>
@@ -2601,7 +2605,7 @@ text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Ar
 <rect x="708" y="79" width="10" height="10" rx="2" fill="#0e4429"/>
 <rect x="708" y="92" width="10" height="10" rx="2" fill="#0e4429"/>
 </g>
-<g transform="translate(0,1085)">
+<g transform="translate(0,1141)">
 <text x="0" y="16"><tspan class="year">2019</tspan><tspan class="count" dx="10">2,094 contributions</tspan></text>
 <text x="0" y="62" class="label">Mon</text>
 <text x="0" y="88" class="label">Wed</text>
@@ -2984,7 +2988,7 @@ text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Ar
 <rect x="708" y="53" width="10" height="10" rx="2" fill="#161b22"/>
 <rect x="708" y="66" width="10" height="10" rx="2" fill="#161b22"/>
 </g>
-<g transform="translate(0,1240)">
+<g transform="translate(0,1296)">
 <text x="0" y="16"><tspan class="year">2018</tspan><tspan class="count" dx="10">1,482 contributions</tspan></text>
 <text x="0" y="62" class="label">Mon</text>
 <text x="0" y="88" class="label">Wed</text>
@@ -3367,7 +3371,7 @@ text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Ar
 <rect x="708" y="40" width="10" height="10" rx="2" fill="#006d32"/>
 <rect x="708" y="53" width="10" height="10" rx="2" fill="#006d32"/>
 </g>
-<g transform="translate(0,1395)">
+<g transform="translate(0,1451)">
 <text x="0" y="16"><tspan class="year">2017</tspan><tspan class="count" dx="10">841 contributions</tspan></text>
 <text x="0" y="62" class="label">Mon</text>
 <text x="0" y="88" class="label">Wed</text>
@@ -3750,7 +3754,7 @@ text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Ar
 <rect x="695" y="118" width="10" height="10" rx="2" fill="#161b22"/>
 <rect x="708" y="40" width="10" height="10" rx="2" fill="#161b22"/>
 </g>
-<g transform="translate(0,1550)">
+<g transform="translate(0,1606)">
 <text x="0" y="16"><tspan class="year">2016</tspan><tspan class="count" dx="10">721 contributions</tspan></text>
 <text x="0" y="62" class="label">Mon</text>
 <text x="0" y="88" class="label">Wed</text>
@@ -4134,7 +4138,7 @@ text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Ar
 <rect x="708" y="105" width="10" height="10" rx="2" fill="#006d32"/>
 <rect x="708" y="118" width="10" height="10" rx="2" fill="#0e4429"/>
 </g>
-<g transform="translate(0,1705)">
+<g transform="translate(0,1761)">
 <text x="0" y="16"><tspan class="year">2015</tspan><tspan class="count" dx="10">2,031 contributions</tspan></text>
 <text x="0" y="62" class="label">Mon</text>
 <text x="0" y="88" class="label">Wed</text>
@@ -4517,7 +4521,7 @@ text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Ar
 <rect x="708" y="79" width="10" height="10" rx="2" fill="#006d32"/>
 <rect x="708" y="92" width="10" height="10" rx="2" fill="#006d32"/>
 </g>
-<g transform="translate(0,1860)">
+<g transform="translate(0,1916)">
 <text x="0" y="16"><tspan class="year">2014</tspan><tspan class="count" dx="10">2,874 contributions</tspan></text>
 <text x="0" y="62" class="label">Mon</text>
 <text x="0" y="88" class="label">Wed</text>
@@ -4900,7 +4904,7 @@ text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Ar
 <rect x="708" y="66" width="10" height="10" rx="2" fill="#161b22"/>
 <rect x="708" y="79" width="10" height="10" rx="2" fill="#161b22"/>
 </g>
-<g transform="translate(0,2015)">
+<g transform="translate(0,2071)">
 <text x="0" y="16"><tspan class="year">2013</tspan><tspan class="count" dx="10">5,580 contributions</tspan></text>
 <text x="0" y="62" class="label">Mon</text>
 <text x="0" y="88" class="label">Wed</text>
@@ -5283,7 +5287,7 @@ text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Ar
 <rect x="708" y="53" width="10" height="10" rx="2" fill="#006d32"/>
 <rect x="708" y="66" width="10" height="10" rx="2" fill="#0e4429"/>
 </g>
-<g transform="translate(0,2170)">
+<g transform="translate(0,2226)">
 <text x="0" y="16"><tspan class="year">2012</tspan><tspan class="count" dx="10">4,709 contributions</tspan></text>
 <text x="0" y="62" class="label">Mon</text>
 <text x="0" y="88" class="label">Wed</text>
@@ -5667,7 +5671,7 @@ text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Ar
 <rect x="708" y="40" width="10" height="10" rx="2" fill="#161b22"/>
 <rect x="708" y="53" width="10" height="10" rx="2" fill="#161b22"/>
 </g>
-<g transform="translate(0,2325)">
+<g transform="translate(0,2381)">
 <text x="0" y="16"><tspan class="year">2011</tspan><tspan class="count" dx="10">2,553 contributions</tspan></text>
 <text x="0" y="62" class="label">Mon</text>
 <text x="0" y="88" class="label">Wed</text>
@@ -6050,7 +6054,7 @@ text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Ar
 <rect x="708" y="105" width="10" height="10" rx="2" fill="#0e4429"/>
 <rect x="708" y="118" width="10" height="10" rx="2" fill="#161b22"/>
 </g>
-<g transform="translate(0,2480)">
+<g transform="translate(0,2536)">
 <text x="0" y="16"><tspan class="year">2010</tspan><tspan class="count" dx="10">612 contributions</tspan></text>
 <text x="0" y="62" class="label">Mon</text>
 <text x="0" y="88" class="label">Wed</text>
