@@ -18,7 +18,7 @@ API_URL = "https://api.github.com/graphql"
 
 # Paste your token here for local runs. Leave it empty in the copy you commit;
 # the GitHub Action will supply it through HEATMAP_TOKEN instead.
-TOKEN = "REDACTED"
+TOKEN = ""
 
 # Layout, in pixels
 CELL = 10                                   # size of one day square
