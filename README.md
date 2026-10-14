@@ -31,3 +31,7 @@
 ## Real Languages
 - English
 - A tiny bit of French (Used to be Fluent, but it turns out when you dont use it for +20 years... you forget it all)
+
+## Heatmap of past commits
+
+[heatmap](https://github.com/q5sys/q5sys/blob/main/past_commits.md)
