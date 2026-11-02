@@ -5,7 +5,7 @@
 - Maintainer of five different Fedora Labs: Security Lab, Fedora Jam, Fedora Astonomy, Fedora Games Lab, and Fedora Scientific Lab (Since 2021)
 - Member of the Fedora Security Team (Since 2021)
 - Developer of WebZFS (Since 2022)
-- Developer/Maintainer of the Lumina Desktop (After Ken Moore stepped back) (Since 2020)
+- Developer of the Lumina Desktop (Since 2016) Maintainer of the Lumina Desktop, after Ken Moore stepped back (Since 2020)
 - Producer of *BSDNow* (Since 2015)
 - Producer of *The Ask Noah Show* (Since 2019)
 - Staff Southeast Linuxfest (Since 2014)
@@ -26,7 +26,7 @@
 - C++
 - Python
 - Bash
-- 
+- Scratch (lol)
 
 ## Real Languages
 - English
